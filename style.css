@@ -16,10 +16,82 @@ body {
   padding: 10px;
 }
 
-.input{
-  width: 80%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.container h1{
+  text-align: center;
+  color: #333;
+
+}
+#input-wrapper{
+  background-color:#fff;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 25px;
+  width: 90%;
+  height: 30px;
+}
+
+#input-wrapper input{
+  background-color: transparent;
+  border: 0px;
+  flex: 1;
+  outline: none;
+  padding: 0px 20px;
+
+}
+
+#add {
+  width: 10%;
+  padding: 0px;
+  margin: auto;
+  border: 0px;
+  background-color: transparent;
+  color:#78909c;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1rem;
+}
+.list{
+  padding-left: 30px;
+  list-style: none;
+  position: relative;
+}
+
+.list li {
+  vertical-align: middle;
+  font-size: medium;
+  margin-top: 1%;
+}
+
+.list li.checked{
+  text-decoration: line-through;
+}
+
+.list li::before{
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./img/checkbox-blank-outline.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.list li.checked::before{
+  background-image: url(./img/checkbox-outline.svg);
+}
+
+.delete{
+  background-image: url(./img/trash-can-outline.svg);
+  display: inline-block;
+  background-size: contain;
+  cursor: pointer;
+  /* background-color: aqua; */
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  position: absolute;
+  right: 5%;
 }
